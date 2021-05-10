@@ -19,9 +19,9 @@ body {
     z-index: 1;
     top:0;
     left:0;
-    /* background-color: #173753; */
+    background-color: #173753;
     /* background-color: #001d3d; */
-    background-color: #14213d;
+    /* background-color: #14213d; */
     overflow-x: hidden;
     text-align: center;
     justify-content: center;
@@ -30,10 +30,14 @@ body {
 
 .sidebar-item {
     display: block;
-    color: white;
+    background: black;
+    color: #FFFEF2;
     padding: 16px;
     font-size: 16px;
     font-weight: bold;
+}
+.sidebar-item:hover {
+    color: skyblue;
 }
 
 .content {

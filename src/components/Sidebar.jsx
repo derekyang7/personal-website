@@ -1,12 +1,14 @@
-const Sidebar = () => {
+import MyImg from "../logo.svg"
+
+const Sidebar = ({ onTitleClick }) => {
     return (
         <div className="sidebar">
-            <h1>Sidebar</h1>
-            <a className="sidebar-item">ABOUT</a>
-            <a className="sidebar-item">PROJECTS</a>
-            <a className="sidebar-item">EXPERIENCE</a>
-            <a className="sidebar-item">EDUCATION</a>
-            <a className="sidebar-item">CONTACT</a>
+            <img src={MyImg} alt="Derek's Logo"/>
+            <button className="sidebar-item" onClick={onTitleClick}>ABOUT</button>
+            <button className="sidebar-item">PROJECTS</button>
+            <button className="sidebar-item">EXPERIENCE</button>
+            <button className="sidebar-item">EDUCATION</button>
+            <button className="sidebar-item">CONTACT</button>
         </div>
     )
 
